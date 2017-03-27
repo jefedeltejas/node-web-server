@@ -1,0 +1,24 @@
+{
+  "name": "node-web-server",
+  "version": "1.0.0",
+  "description": "focuses on express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefedeltejas/node-web-server.git"
+  },
+  "keywords": [
+    "express.js",
+    "node",
+    "node-web-server"
+  ],
+  "author": "Jackalope",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefedeltejas/node-web-server/issues"
+  },
+  "homepage": "https://github.com/jefedeltejas/node-web-server#readme"
+}

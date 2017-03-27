@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jefedeltejas/node-web-server/issues"
   },
-  "homepage": "https://github.com/jefedeltejas/node-web-server#readme"
+  "homepage": "https://github.com/jefedeltejas/node-web-server#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }

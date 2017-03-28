@@ -1,4 +1,5 @@
-const express = require('express');
+const express = require('express'),
+      hbs = require('hbs');
 
 var app = express();
 
@@ -27,4 +28,6 @@ app.get('/bad', (req, res) => {
   });
 });
 
-app.listen(3333);
+app.listen(3333, () => {
+  console.log('Starting up zie server on port 3333');
+});

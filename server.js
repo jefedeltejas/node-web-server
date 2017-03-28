@@ -7,19 +7,27 @@ app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-  // res.send('<h1>Hello all o\' y\'all Express lovers!</h1>');
-  res.send({
-    name: 'Walker',
-    likes: [
-      'Texas',
-      'Rangering',
-      'Roundhouse kicks'
-    ]
+  res.render('home.hbs', {
+    pageTitle: 'Home page',
+    welcomeMessage: 'Welcome Valued Express.js Customer',
+    currentYear: new Date().getFullYear()
   });
+  // res.send('<h1>Hello all o\' y\'all Express lovers!</h1>');
+  // res.send({
+  //   name: 'Walker',
+  //   likes: [
+  //     'Texas',
+  //     'Rangering',
+  //     'Roundhouse kicks'
+  //   ]
+  // });
 });
 
 app.get('/about', (req, res) => {
-  res.send('<h1>About Page</h1>');
+  res.render('about.hbs', {
+    pageTitle: 'About Page',
+    currentYear: new Date().getFullYear()
+  });
 });
 
 app.get('/bad', (req, res) => {

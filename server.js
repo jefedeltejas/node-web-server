@@ -16,6 +16,13 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.send('<h1>About Page</h1>');
-})
+});
+
+app.get('/bad', (req, res) => {
+  res.send({
+    error: 'bad request',
+    message: 'better take that to the house'
+  });
+});
 
 app.listen(3333);

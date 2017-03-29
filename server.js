@@ -1,6 +1,7 @@
 const express = require('express'),
       hbs = require('hbs'),
-      fs = require('fs');
+      fs = require('fs'),
+      port = process.env.PORT || 3333;
 
 var app = express();
 
@@ -67,6 +68,6 @@ app.get('/bad', (req, res) => {
   });
 });
 
-app.listen(3333, () => {
-  console.log('Zie Server is up on port 3333');
+app.listen(port, () => {
+  console.log(`Zie Server is up on port ${port}`);
 });
